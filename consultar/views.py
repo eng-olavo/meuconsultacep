@@ -12,14 +12,4 @@ def consultar(request):
 
         print(dadoscep)
 
-        print('logr : ' + dadoscep['logradouro'])
-        print('comp : ' + dadoscep['complemento'])
-        print('bair : ' + dadoscep['bairro'])
-        print('loca : ' + dadoscep['localidade'])
-        print('__uf : ' + dadoscep['uf'])
-        print('_cep : ' + dadoscep['cep'])
-
-    return 'ok'
-
-#redirect('/consultacep.html')
-
+        return render(request, 'consultacep.html', dadoscep)
