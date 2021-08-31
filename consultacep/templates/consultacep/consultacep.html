@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Consulta CEP</title>
+    <style>
+        body {
+          background: grey;
+          color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>APP - Meu Consulta CEP</h1>
+    <hr>
+    <form action="consultar" method="GET">
+        <label>Informe o CEP : </label><br><br>
+        <input type="text" id="cep" name="cep"><br><br>
+        <button type="submit">Consultar</button><br><br>
+        <hr>
+        <br>
+        <label>Logradouro :</label>
+        <input type="text" id="logradouro" name="logradouro">{{logradouro}}
+        <br><br>
+        <label>Complemento :</label>
+        <input type="text" id="complemento" name="complemento">{{complemento}}
+        <br><br>
+        <label>Bairro :</label>
+        <input type="text" id="bairro" name="bairro">{{bairro}}
+        <br><br>
+        <label>Localidade :</label>
+        <input type="text" id="localidade" name="localidade">{{localidade}}
+        <br><br>
+        <label>UF :</label>
+        <input type="text" id="uf" name="uf">{{uf}}
+        <br><br>
+    </form>
+
+
+</body>
+</html>
